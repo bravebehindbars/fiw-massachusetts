@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.glow {
+  font-family: broadway;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+ -moz-animation:glow 1s ease-in-out infinite alternate;
+ animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8600b3, 0 0 40px #8600b3, 0 0 50px #8600b3, 0 0 60px #8600b3, 0 0 70px #8600b3;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #d966ff, 0 0 40px #d966ff, 0 0 50px #d966ff, 0 0 60px #d966ff, 0 0 70px #d966ff, 0 0 80px #d966ff;
+  }
+}
+
+* {box-sizing: border-box}
+body {font-family: broadway; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #8600b3;}
+</style>
+</head>
+<body>
+
+<h1 class="glow">Encouraging Quotes</h1>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Success isn't about how much money you make; it's about the difference you make in people's lives.</q>
+  <p class="author">- Michelle Obama</p>
+</div>
+
+<div class="mySlides">
+  <q>What we learn and explore through our lives are very valuable things we should never take for granted. It will help us in the future to make the right decisions.</q>
+  <p class="author">- Maria Mejia</p>
+</div>
+
+<div class="mySlides">
+  <q>Find a group of people that challenge and inspire you. Spend a lot of time with them and it will change your life.</q>
+  <p class="author">- Amy Poehler</p>
+</div>
+
+<div class="mySlides">
+  <q>Be driven, be focused, but enjoy every moment because it only happens once.</q>
+  <p class="author">- Alicia Keys</p>
+</div>
+
+<div class="mySlides">
+  <q>Be silly. You're allowed to be silly. There's nothing wrong with it.</q>
+  <p class="author">- Jimmy Fallon</p>
+</div>
+
+<div class="mySlides">
+  <q>This is life, and imperfection is beautiful...don't be afraid of that.</q>
+  <p class="author">- Dylan O'Brien</p>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

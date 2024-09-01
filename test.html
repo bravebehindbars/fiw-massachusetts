@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<style>
+
+
+#grad1 {
+  height: 80px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+body {
+  font-family: broadway;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 275px;
+  height: 275px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: black;
+  transform: rotateY(180deg);
+}
+	
+  .float {
+    float: left;
+    padding: 30px;
+  }	
+
+img {
+  border: 5px solid dodgerblue;
+}
+
+</style>
+</head>
+	<body>
+
+		<div id="grad1" style="text-align:center;margin:auto;color:black;font-size:40px;font-weight:bold">
+			Testimonials
+		</div>
+
+<br>
+
+	<div class="flip-card float">
+  		<div class="flip-card-inner">
+    		<div class="flip-card-front">
+      			<img src="pics/woman1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    		</div>
+    	<div class="flip-card-back">
+      		<h1>Janet Doe</h1> 
+       
+      			<p>I was so scared when I first got out. But F.I.W. helped me so much! I don't think I would have made it without them.</p>
+    	</div>
+  		</div>
+	</div>
+
+	<div class="flip-card float">
+  		<div class="flip-card-inner">
+    		<div class="flip-card-front">
+      			<img src="pics/woman2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    		</div>
+    
+    	<div class="flip-card-back">
+      		<h1>Tina Smith</h1> 
+       
+      			<p>F.I.W. is a great place! I learned so much and I now volunteer to help others who were in my position.</p>
+    	</div>
+  		</div>
+</div>
+
+	<div class="flip-card float">
+  		<div class="flip-card-inner">
+    		<div class="flip-card-front">
+      			<img src="pics/woman3.png" alt="Avatar" style="width:300px;height:300px;">
+    		</div>
+    	<div class="flip-card-back">
+      		<h1>Beth Jones</h1> 
+       
+      			<p>I am so grateful for F.I.W.! They not only helped me get back on my feet, but I now have my own business! I donate regularly so I can help others too.</p>
+    	</div>
+  		</div>
+	</div>
+
+  <div class="flip-card float">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="pics/woman4.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+      <div class="flip-card-back">
+          <h1>Carrie Grant</h1> 
+       
+            <p>I don't know what I would do if I didn't have F.I.W.! Their counsellors are so understanding.</p>
+      </div>
+      </div>
+  </div>
+
+  <div class="flip-card float">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="pics/woman5.jpg" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+      <div class="flip-card-back">
+          <h1>Jennifer Dane</h1> 
+       
+            <p>F.I.W. is awesome! I learned so much while there and the counselors were great. Thanks so much!</p>
+      </div>
+      </div>
+  </div>
+
+</body>
+
+</html>

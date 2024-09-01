@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: black;
+  font-family: broadway;
+}
+
+.glow {
+  font-size: 140px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8600b3, 0 0 40px #8600b3, 0 0 50px #8600b3, 0 0 60px #8600b3, 0 0 70px #8600b3;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #d966ff, 0 0 40px #d966ff, 0 0 50px #d966ff, 0 0 60px #d966ff, 0 0 70px #d966ff, 0 0 80px #d966ff;
+  }
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 5px solid #8600b3;
+}
+/*
+.gallery {
+  width: 300px;
+  height: 300px;
+}
+*/
+.gallery-pic {
+  
+  height: 400px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 18pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 6px;
+  float: left;
+  width: 33.33%;
+  height: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.white{
+	color:white;
+}
+
+.flex_row{
+   display: flex; 
+   flex-direction: row;
+}
+.container-fluid {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+</style>
+</head>
+<body>
+<h1 class="glow">Classes Offered</h1>
+
+<div class="container-fluid">
+  <div class="flex_row">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="knit.html">
+          <img class="gallery-pic" src="pics/yarn1.png" alt="yarn" width="100%">
+        </a>
+        <div class="desc white">Knitting and/or Crocheting</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="write.html">
+          <img class="gallery-pic" src="pics/journal.jpg" alt="journal" width="100%">
+        </a>
+        <div class="desc white">Journaling and Writing</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="paint.html">
+          <img class="gallery-pic" src="pics/paint1.jpg" alt="paint" width="100%">
+        </a>
+        <div class="desc white">Painting</div>
+      </div>
+    </div>
+
+  </div> <!-- close row -->
+
+  <div class="flex_row">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="paper.html">
+          <img class="gallery-pic" src="pics/origami3.jpg" alt="origami" width="100%">
+        </a>
+        <div class="desc white">Paper Crafting</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="yoga.html">
+          <img class="gallery-pic" src="pics/yoga1.jpg" alt="yoga" width="100%">
+        </a>
+        <div class="desc white">Yoga and Meditation</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="book.html">
+          <img class="gallery-pic" src="pics/book2.png" alt="book" width="100%">
+        </a>
+        <div class="desc white">Book Club</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex_row">  
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="cook.html">
+          <img class="gallery-pic" src="pics/cook1.jpg" alt="book" width="100%">
+        </a>
+        <div class="desc white">Cooking Classes</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="sew.html">
+          <img class="gallery-pic" src="pics/sew2.jpg"  alt="book" width="100%">
+        </a>
+        <div class="desc white">Sewing Classes</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="counsel.html">
+          <img class="gallery-pic" src="pics/counsel2.jpg" alt="counsel" width="100%">
+        </a>
+        <div class="desc white">Counseling</div>
+      </div>
+    </div>
+  </div> <!-- close row -->
+</div><!-- close grid -->
+
+</body>
+
+</html>

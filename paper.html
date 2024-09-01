@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+	
+.h1 {
+	font-family: broadway;
+	text-align: center;
+	font-size: 24pt;
+	color: #8600b3;
+}	
+
+.p {
+	font-family: broadway;
+	text-align: center;
+	font-size: 18pt;
+	color: dodgerblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  border: 5px solid black;
+}
+
+</style>
+
+<h1 class="h1"> Paper Crafting
+</h1>
+
+<p class="p"> Learn some basic paper crafting  techniques like origami or card making with help from one of our activities coordinators.
+</p>
+
+<div class="row">
+  <div class="column img">
+    <img src="pics/origami1.jpg" alt="Origami1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="pics/origami2.jpg" alt="Origami2" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="pics/origami3.jpg" alt="Origami3" style="width:100%">
+  </div>
+</div>
+
+
+</html>

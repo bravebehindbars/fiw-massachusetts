@@ -1,0 +1,93 @@
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #8600b3;
+  color: white;
+}
+
+.font {
+  font-family: broadway;
+}
+
+.h2 {
+  font-size: 18pt;
+}
+
+.p2 {
+  color: #8600b3
+}
+
+.main {
+  color: black;
+  font-size: 20pt;
+}
+
+a:hover {
+      color: #8600b3;
+}
+
+.footer {
+   width: 100%;
+   background-color: #8600b3;
+   color: white;
+   text-align: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30pt;
+  font-family: cursive;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pic {
+      height: 150px;
+      width: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8600b3; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #620080; 
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+
